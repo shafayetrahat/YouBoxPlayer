@@ -1,0 +1,3 @@
+a#!/bin/bash
+
+cd $HOME/.youtube_player && ./run.sh

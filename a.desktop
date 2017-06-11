@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Terminal=false
+Icon=/opt/yboxplayer.png
+Name=Yboxplayer
+Exec=ytpl
+Categories=Utility;
