@@ -73,6 +73,7 @@ class Ui_Dialog(object):
 ########################################################################
     def retranslateUi(self, Dialog):
         Dialog.setWindowTitle(_translate("Dialog", "Youboxplayer", None))
+        Dialog.setWindowIcon(QtGui.QIcon('yboxplayer.png'))
         self.pushButton.setText(_translate("Dialog", "Search", None))
         self.label.setText(_translate("Dialog", "Search Result", None))
 
