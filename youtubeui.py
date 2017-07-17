@@ -48,6 +48,7 @@ class Ui_Dialog(object):
         self.listWidget.setObjectName(_fromUtf8("listWidget"))
         self.retranslateUi(Dialog)
         self.pushButton.clicked.connect(self.search)
+	self.listWidget.itemClicked.connect(self.copy)
         self.listWidget.itemDoubleClicked.connect(self.surf)
 
     def search(self):
@@ -61,6 +62,15 @@ class Ui_Dialog(object):
         #print video_ret
         # print len(video_list)
         self.listWidget.addItems(video_ret)
+
+#######################################################################
+    def copy(self):
+        url = parse_url(self.listWidget.currentRow())
+        import subprocess
+        URL = "https://www.youtube.com/watch?v=" + url
+	clipboard = QtGui.QApplication.clipboard()
+	clipboard.setText(URL)        
+
 
 #######################################################################
     def surf(self):
