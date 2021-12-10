@@ -10,7 +10,7 @@ import os
 # tab of
 #   https://cloud.google.com/console
 # Please ensure that you have enabled the YouTube Data API for your project.
-DEVELOPER_KEY = "AIzaSyD7QxHIPVfeUaNChhU_DEln-cMDOWM9S0A"
+DEVELOPER_KEY = "*******************************************"
 YOUTUBE_API_SERVICE_NAME = "youtube"
 YOUTUBE_API_VERSION = "v3"
 
